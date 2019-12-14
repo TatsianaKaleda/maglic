@@ -1,0 +1,86 @@
+// Font vars
+$openSansRegular: openSansRegular, sans-seriv, arial;
+$openSansLight: openSansLight, sans-seriv, arial;
+$openSansLightItalic: openSansLightItalic, sans-seriv, arial;
+$openSansItalic: openSansItalic, sans-seriv, arial;
+$montserratBold: montserratBold, sans-seriv, arial;
+$montserratRegular: montserratRegular, sans-seriv, arial;
+$montserratSemiBold: montserratSemiBold, sans-seriv, arial;
+$latoBlack: latoBlack, sans-seriv, arial;
+$crimsonTextItalic: crimsonTextItalic, sans-seriv, arial;
+
+@mixin mglc-font-face($font-family, $file-path, $weight: normal, $style: normal) {
+  @font-face {
+        font-family: $font-family;
+        font-weight: $weight;
+        font-style: $style;
+        src: url("'" + $file-path + ".eot?#iefix") format('embedded-opentype'), 
+             url("'" + $file-path + ".woff") format('woff'), 
+             url("'" + $file-path + ".otf") format('opentype'), 
+             url("'" + $file-path + ".ttf") format('truetype');
+  }
+}
+  
+@include mglc-font-face("openSansRegular", "../../fonts/OpenSans/OpenSans-Regular");
+@include mglc-font-face("openSansLight", '../../fonts/OpenSans/OpenSans-Light', 300);
+@include mglc-font-face("openSansLightItalic", '../../fonts/OpenSans/OpenSans-LightItalic', 300, italic);
+@include mglc-font-face("openSansItalic", '../../fonts/OpenSans/OpenSans-Italic', 400, italic);
+@include mglc-font-face("montserratBold", '../../fonts/Montserrat/Montserrat-Bold', 700);
+@include mglc-font-face("montserratRegular", '../../fonts/Montserrat/Montserrat-Regular');
+@include mglc-font-face("montserratSemiBold", '../../fonts/Montserrat/Montserrat-SemiBold', 500);
+@include mglc-font-face("latoBlack", '../../fonts/Lato/Lato-Black', 900);
+@include mglc-font-face("crimsonTextItalic", '../../fonts/CrimsonText/CrimsonText-Italic', 400, italic);
+  
+@mixin mglc-font-open-sans-regular {
+  font-family: $openSansRegular;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+@mixin mglc-font-open-sans-light {
+  font-family: $openSansLight;
+  font-weight: 300;
+  font-style: normal;
+}
+  
+@mixin mglc-font-open-sans-light-italic {
+  font-family: $openSansLightItalic;
+  font-weight: 300;
+  font-style: italic;
+}
+  
+@mixin mglc-font-open-sans-italic {
+  font-family: $openSansItalic;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin mglc-font-montserrat-bold {
+  font-family: $montserratBold;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin mglc-font-montserrat-regular {
+  font-family: $montserratRegular;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin mglc-font-montserrat-semi-bold {
+  font-family: $montserratSemiBold;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin mglc-font-lato-black {
+  font-family: $latoBlack;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@mixin mglc-font-crimson-text-italic {
+  font-family: $crimsonTextItalic;
+  font-weight: 400;
+  font-style: italic;
+}

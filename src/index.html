@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="ru">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
-    <title>Я собираю проекты как рок звезда</title>
+    <title>Maglic</title>
 </head>
+
 <body>
-//= template/header.html
 
-<section class="content">
-    Content
-
-    <div class="content-item">
-        text
-        <p class="content-item-text">
-            text
-        </p>
+    <div data-target="#main-navigation" data-offset="0">
+        //= template/sections/top-section.html
+        //= template/sections/services-section.html
+        //= template/sections/work-section.html
+        //= template/sections/about-section.html
+        //= template/sections/team-section.html
+        //= template/sections/blog-section.html
+        //= template/sections/pricing-section.html
+        //= template/sections/contact-section.html
     </div>
-</section>
 
+    //= template/footer.html
 
-<div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-        <div><h3>1</h3></div>
-        <div><h3>2</h3></div>
-        <div><h3>3</h3></div>
-        <div><h3>4</h3></div>
-        <div><h3>5</h3></div>
-        <div><h3>6</h3></div>
-      </div>
-
-//= template/footer.html
-
-<script type="script" src="js/main.js"></script>
+    <script type="script" src="./js/main.js"></script>
+    <script type="script" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
+
 </html>

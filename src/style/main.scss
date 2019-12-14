@@ -4,11 +4,26 @@
 @import "../../bower_components/normalize.css/normalize.css";
 
 /*
-* Custom
-*/
-@import "partials/app";
-
-/*
 * Bootstap
 */
-@import "../../node_modules/bootstrap/scss/bootstrap"
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/*
+* Fonts
+*/
+@import "./partials/fonts";
+
+/*
+* Fonts
+*/
+@import "./partials/vars";
+
+/*
+* Custom
+*/
+@import "./partials/app";
+
+/*
+* Top-section
+*/
+@import "./partials/top-section";

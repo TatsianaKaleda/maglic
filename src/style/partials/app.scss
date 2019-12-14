@@ -1,3 +1,22 @@
+@import './fonts.scss';
+
+
+// @font-face {
+//   font-family: 'openSansRegular';
+//   font-weight: 400;
+//   font-style: normal;
+//   src: url('../../fonts/OpenSans/OpenSans-Regular.eot') format('embedded-opentype'), 
+//        url('../../fonts/OpenSans/OpenSans-Regular.woff') format('woff'), 
+//        url('../../fonts/OpenSans/OpenSans-Regular.otf') format('opentype'), 
+//        url('../../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype');
+// }
+
+
+
+
+
+
+
 .content {
   color: aqua;
 
@@ -5,7 +24,8 @@
     color: blue;
 
     &-text {
-      color: red;
+      margin-bottom: 50px;
+      @include mglc-font-lato-black;
       
     }
   }

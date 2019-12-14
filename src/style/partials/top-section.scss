@@ -1,0 +1,25 @@
+.mglc-top-section {
+    &-container {
+        background-image: url("../../img/background/bg1.jpg");
+
+        & .mglc-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: $max-width-content;
+            margin: 0 auto;
+
+            &-logo-link-icon {
+                transition: 0.3s;
+
+                &:hover {
+                    transform: rotateZ(20deg)
+                
+                }
+            }
+            &-nav {
+
+            }
+        }
+    }
+}
