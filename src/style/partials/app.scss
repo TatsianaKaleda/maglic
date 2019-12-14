@@ -1,0 +1,12 @@
+.content {
+  color: aqua;
+
+  &-item {
+    color: blue;
+
+    &-text {
+      color: red;
+      
+    }
+  }
+}
