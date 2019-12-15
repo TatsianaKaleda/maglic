@@ -21,7 +21,7 @@ var path = {
         css: 'build/css/',
         img: 'build/img/',
         fonts: 'build/fonts/',
-        fontawesome: 'build/css/webfonts',
+        webfonts: 'build/webfonts',
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
@@ -29,7 +29,7 @@ var path = {
         style: 'src/style/main.scss',
         img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'src/fonts/**/*.*',
-        fontsAwesome: 'node_modules/@fortawesome/fontawesome-free/webfonts/*.*'
+        webfonts: 'node_modules/@fortawesome/fontawesome-free-webfonts/webfonts/*.*'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         html: 'src/**/*.html',
@@ -62,9 +62,9 @@ gulp.task('html:build', function () {
 
 
 
-gulp.task('fontsAwesome:build', function () {
-    gulp.src(path.src.fontsAwesome) //Выберем файлы по нужному пути
-        .pipe(gulp.dest(path.build.fontawesome)); //Выплюнем их в папку build
+gulp.task('webfonts:build', function() {
+    gulp.src(path.src.webfonts)
+        .pipe(gulp.dest(path.build.webfonts))
 });
 
 
@@ -115,7 +115,7 @@ gulp.task('build', [
     'style:build',
     'fonts:build',
     'image:build',
-    'fontsAwesome:build'
+    'webfonts:build'
 ]);
 
 gulp.task('watch', function(){
