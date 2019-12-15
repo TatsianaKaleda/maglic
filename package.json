@@ -5,6 +5,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
     "bootstrap": "^4.4.1",
     "browser-sync": "^2.26.7",
     "css-reset-and-normalize": "^2.1.0",

@@ -1,24 +1,56 @@
 .mglc-top-section {
     &-container {
-        background-image: url("../../img/background/bg1.jpg");
+        position: relative;
+        padding-bottom: 845px;
+        background-color: rgba(0, 0, 0, .5);
 
+        &-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-image: url("../../img/background/bg1.jpg");
+            height: 100%;
+            width: 100%;
+        }
         & .mglc-header {
             display: flex;
-            align-items: center;
+            align-items: end;
             justify-content: space-between;
             max-width: $max-width-content;
             margin: 0 auto;
+            padding-top: 99px;;
 
             &-logo-link-icon {
                 transition: 0.3s;
 
                 &:hover {
-                    transform: rotateZ(20deg)
-                
+                    transform: rotateZ(20deg);
                 }
             }
-            &-nav {
+            & .navbar {
+                margin-top: 19px;
+                padding: 0;
 
+                & .nav-item:not(:last-child) {
+                    & .nav-link {
+                        padding: 0 13px;
+                    }
+                }
+                & .nav-item {
+                    &:last-child {
+                        padding-left: 13px;
+
+                    }
+                }
+                & .nav-link {
+                    padding: 0;
+                    @include mglc-font-lato-black;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: $text-color;
+
+                }
             }
         }
     }
