@@ -1,7 +1,7 @@
 .mglc-top-section {
     &-container {
         position: relative;
-        padding-bottom: 845px;
+        padding-bottom: 295px;
         background-color: rgba(0, 0, 0, .5);
 
         &-bg {
@@ -10,6 +10,7 @@
             left: 0;
             z-index: -1;
             background-image: url("../../img/background/bg1.jpg");
+            background-position: center;
             height: 100%;
             width: 100%;
         }
@@ -19,7 +20,7 @@
             justify-content: space-between;
             max-width: $max-width-content;
             margin: 0 auto;
-            padding-top: 99px;;
+            padding-top: 99px;
 
             &-logo-link-icon {
                 transition: 0.3s;
@@ -34,12 +35,14 @@
 
                 & .nav-item:not(:last-child) {
                     & .nav-link {
-                        padding: 0 13px;
+                        padding-left: 3px;
+                        padding-right: 33px;
                     }
                 }
                 & .nav-item {
                     &:last-child {
-                        padding-left: 13px;
+                        padding-left: 5px;
+                        padding-right: 8px;
 
                     }
                 }
@@ -49,7 +52,54 @@
                     font-size: 18px;
                     text-transform: uppercase;
                     color: $text-color;
+                    transition: 0.3s;
 
+                    &:hover {
+                        transform: rotateZ(20deg);
+                    }
+                }
+            }
+        }
+        & .carousel {
+            height: 550px;
+            transition: .3s;
+            &-item img {
+                opacity: 0;
+                height: 497px;
+            }
+            &-caption {
+                & h1 {
+                @include mglc-font-lato-black;
+                font-size: 72px;
+                text-transform: uppercase;
+                color: $text-color;
+                margin-bottom: 8px;
+                }
+                & h2 {
+                    @include mglc-font-lato-black;
+                    // font-size: 30px;
+                    font-size: 72px;
+                    text-transform: uppercase;
+                    color: $text-color;
+                    margin-bottom: 14px;
+                }
+                & p {
+                    @include mglc-font-open-sans-light;
+                    font-size: 20px;
+                    color: $text-color;
+                }
+                & .button {
+                    width: 100px;
+                    height: 30px;
+                    padding: 12px 37px;
+                    margin: 0 auto;
+                    border: 3px solid rgba(255, 255, 255, 0.5);
+                    align-items: center;
+                    text-decoration: none;
+                    @include mglc-font-montserrat-regular;
+                    font-size: 24px;;
+                    color: $text-color;
+                    background: transparent;
                 }
             }
         }

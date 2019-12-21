@@ -1,0 +1,26 @@
+.mglc-services-section {
+    &-container {
+        &-bg {
+            background-image: url("../../img/background/bg2.jpg");
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.mglc-services-section {
+    &-container {
+        padding-bottom: 295px;
+    
+        &-bg {
+            background-image: url("../../img/background/bg2.jpg");
+            background-position: center;
+            height: 100%;
+            width: 100%;
+        }
+        &-info {
+
+            & h2 {
+                @include 
+            }
+        }

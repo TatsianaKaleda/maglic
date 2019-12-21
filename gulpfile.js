@@ -21,7 +21,7 @@ var path = {
         css: 'build/css/',
         img: 'build/img/',
         fonts: 'build/fonts/',
-        webfonts: 'build/webfonts',
+        webfonts: 'build/webfonts/'
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
@@ -57,19 +57,6 @@ gulp.task('html:build', function () {
         .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
         .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
 });
-
-
-
-
-
-gulp.task('webfonts:build', function() {
-    gulp.src(path.src.webfonts)
-        .pipe(gulp.dest(path.build.webfonts))
-});
-
-
-
-
 
 gulp.task('js:build', function () {
     gulp.src(path.src.js) //Найдем наш main файл
@@ -107,6 +94,11 @@ gulp.task('image:build', function () {
 gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
+});
+
+gulp.task('webfonts:build', function() {
+    gulp.src(path.src.webfonts)
+        .pipe(gulp.dest(path.build.webfonts))
 });
 
 gulp.task('build', [

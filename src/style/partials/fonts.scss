@@ -21,15 +21,15 @@ $crimsonTextItalic: crimsonTextItalic, sans-seriv, arial;
   }
 }
   
-@include mglc-font-face("openSansRegular", "../../fonts/OpenSans/OpenSans-Regular");
-@include mglc-font-face("openSansLight", '../../fonts/OpenSans/OpenSans-Light', 300);
-@include mglc-font-face("openSansLightItalic", '../../fonts/OpenSans/OpenSans-LightItalic', 300, italic);
-@include mglc-font-face("openSansItalic", '../../fonts/OpenSans/OpenSans-Italic', 400, italic);
-@include mglc-font-face("montserratBold", '../../fonts/Montserrat/Montserrat-Bold', 700);
-@include mglc-font-face("montserratRegular", '../../fonts/Montserrat/Montserrat-Regular');
-@include mglc-font-face("montserratSemiBold", '../../fonts/Montserrat/Montserrat-SemiBold', 500);
-@include mglc-font-face("latoBlack", '../../fonts/Lato/Lato-Black', 900);
-@include mglc-font-face("crimsonTextItalic", '../../fonts/CrimsonText/CrimsonText-Italic', 400, italic);
+@include mglc-font-face("openSansRegular", "../../../fonts/OpenSans/OpenSans-Regular");
+@include mglc-font-face("openSansLight", '../../../fonts/OpenSans/OpenSans-Light', 300);
+@include mglc-font-face("openSansLightItalic", '../../../fonts/OpenSans/OpenSans-LightItalic', 300, italic);
+@include mglc-font-face("openSansItalic", '../../../fonts/OpenSans/OpenSans-Italic', 400, italic);
+@include mglc-font-face("montserratBold", '../../../fonts/Montserrat/Montserrat-Bold', 700);
+@include mglc-font-face("montserratRegular", '../../../fonts/Montserrat/Montserrat-Regular');
+@include mglc-font-face("montserratSemiBold", '../../../fonts/Montserrat/Montserrat-SemiBold', 500);
+@include mglc-font-face("latoBlack", '../../../fonts/Lato/Lato-Black', 900);
+@include mglc-font-face("crimsonTextItalic", '../../../fonts/CrimsonText/CrimsonText-Italic', 400, italic);
   
 @mixin mglc-font-open-sans-regular {
   font-family: $openSansRegular;
