@@ -11,6 +11,8 @@
             z-index: -1;
             background-image: url("../../img/background/bg1.jpg");
             background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 100%;
             width: 100%;
         }
@@ -97,7 +99,7 @@
                     align-items: center;
                     text-decoration: none;
                     @include mglc-font-montserrat-regular;
-                    font-size: 24px;;
+                    font-size: 24px;
                     color: $text-color;
                     background: transparent;
                 }

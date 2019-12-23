@@ -1,26 +1,99 @@
 .mglc-services-section {
-    &-container {
-        &-bg {
-            background-image: url("../../img/background/bg2.jpg");
-            height: 100%;
-            width: 100%;
-        }
-    }
-}
+    // background-image: url("../../img/background/bg2.jpg");
+    background-color: brown;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 177px;
 
-.mglc-services-section {
     &-container {
-        padding-bottom: 295px;
-    
-        &-bg {
-            background-image: url("../../img/background/bg2.jpg");
-            background-position: center;
-            height: 100%;
-            width: 100%;
-        }
-        &-info {
+        max-width: $max-width-content;
+        padding-top: 66px;
+        margin: 0 auto;
 
-            & h2 {
-                @include 
+        & .mglc-services-section-info {
+            max-width: 670px;
+            box-sizing: border-box;
+            margin-left: 219px;
+            margin-top: 2px;
+
+            & .main-name {
+                margin-bottom: 20px;
+                @include mglc-font-montserrat-bold;
+                font-size: 30px;
+                letter-spacing: 2px;
+                color: $text-color;
+            }
+
+            & .main-name-info {
+                @include mglc-font-open-sans-light;
+                font-size: 16px;
+                line-height: 30px;
+                color: $text-color;
             }
         }
+        & .mglc-services-section-icon-services {
+
+            & ul {
+                margin-top: 40px;
+
+                & li {
+                    display: inline-block;
+                    list-style-type: none;
+                    position: relative;
+                    background-color: #fff;
+                    border: 2px solid  rgba(255, 255, 255, 0.5);
+                    border-radius: 50%;
+                    width: 70px;
+                    height: 70px;
+                    vertical-align: middle;
+                    margin-right: 23px;
+                    margin-left: 180px;
+                }
+
+                & li:last-child {
+                    margin-left: 152px;
+                }
+
+                    & i {
+                        position: absolute;
+                        top: 19px;
+                        left: 19px;
+                        font-size: 28px;
+    
+                    }
+
+                    & .name {
+                        display: inline-block;
+                        position: absolute;
+                        top: 19px;
+                        left: 97px;
+                        width: 128px;
+                        height: 20px;
+                        @include mglc-font-montserrat-semi-bold;
+                        font-size: 14px;
+                        word-spacing: 5px;
+                    }
+                }     
+            }
+        & .services-section-button {
+            margin: 98px 477px;
+            & a{
+                width: 72px;
+                height: 30px;
+                padding: 16px 31px;
+                border: 1px solid rgba(255,255,255,.5);
+                -webkit-box-align: center;
+                align-items: center;
+                text-decoration: none;
+                @include mglc-font-montserrat-semi-bold;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 18px;
+                color: $text-color;
+                background: transparent;
+            }
+        }    
+    } 
+  
+}
+   

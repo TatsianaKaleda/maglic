@@ -1,0 +1,32 @@
+.mglc-about-section {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+   
+    &-bg {
+        position: absolute;
+        top: 162px;
+        right: 94px;
+        z-index: -1;
+        background-image: url("../../img/background/phone.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 375px;
+    }
+
+    &-container {
+        max-width: $max-width-content;
+        margin: 0 84.5px;
+        
+        & .mglc-about-section-title {
+    
+            & h5 {
+                @include mglc-font-montserrat-bold;
+                font-size: 18px;
+            }
+        }
+        
+
+       
+    }
+}
