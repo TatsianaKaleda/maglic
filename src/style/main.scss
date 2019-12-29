@@ -14,9 +14,14 @@
 @import "./partials/fonts";
 
 /*
-* Fonts
+* Vars
 */
 @import "./partials/vars";
+
+/*
+* Shared classes
+*/
+@import "./partials/shared-classes.scss";
 
 /*
 * Custom
@@ -50,3 +55,13 @@
 * About-section
 */
 @import "./partials/about-section";
+
+/*
+* About-section
+*/
+@import "./partials/facts-section";
+
+/*
+* Team-section
+*/
+@import "./partials/team-section";

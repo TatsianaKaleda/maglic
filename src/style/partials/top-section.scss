@@ -41,6 +41,7 @@
                         padding-right: 33px;
                     }
                 }
+
                 & .nav-item {
                     &:last-child {
                         padding-left: 5px;
@@ -48,16 +49,17 @@
 
                     }
                 }
+
                 & .nav-link {
-                    padding: 0;
                     @include mglc-font-lato-black;
+                    padding: 0;
                     font-size: 18px;
                     text-transform: uppercase;
                     color: $text-color;
-                    transition: 0.3s;
+                    transition: 0.2s;
 
                     &:hover {
-                        transform: rotateZ(20deg);
+                        font-size: 20px;
                     }
                 }
             }
@@ -65,43 +67,45 @@
         & .carousel {
             height: 550px;
             transition: .3s;
+
             &-item img {
-                opacity: 0;
-                height: 497px;
+                visibility: hidden;
+                height: 543px;
             }
+
             &-caption {
+                bottom: auto;
+                top: 48%;
+                padding-right: 18px;
+
                 & h1 {
                 @include mglc-font-lato-black;
                 font-size: 72px;
                 text-transform: uppercase;
                 color: $text-color;
-                margin-bottom: 8px;
+                margin-bottom: 18px;
                 }
-                & h2 {
-                    @include mglc-font-lato-black;
-                    // font-size: 30px;
-                    font-size: 72px;
-                    text-transform: uppercase;
-                    color: $text-color;
-                    margin-bottom: 14px;
-                }
+                
                 & p {
                     @include mglc-font-open-sans-light;
                     font-size: 20px;
                     color: $text-color;
                 }
-                & .button {
-                    width: 100px;
-                    height: 30px;
-                    padding: 12px 37px;
-                    margin: 0 auto;
-                    border: 3px solid rgba(255, 255, 255, 0.5);
-                    align-items: center;
-                    text-decoration: none;
+
+                & button {
                     @include mglc-font-montserrat-regular;
+                    margin-top: 33px;
+                    margin-left: 10px;
+                    padding: 6px 39px;
+                    border: 3px solid rgba(255, 255, 255, 0.5);
                     font-size: 24px;
                     color: $text-color;
-                    background: transparent;
+                    background: none;
+                    transition: 0.3s;
+
+                    &:hover {
+                        font-size: 20px;
+                    }
                 }
             }
         }

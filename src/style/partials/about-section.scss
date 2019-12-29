@@ -1,6 +1,7 @@
 .mglc-about-section {
     position: relative;
     background-color: rgba(255, 255, 255, 0);
+    padding-bottom: 123px;
    
     &-bg {
         position: absolute;
@@ -13,20 +14,120 @@
         height: 400px;
         width: 375px;
     }
-
-    &-container {
-        max-width: $max-width-content;
-        margin: 0 84.5px;
-        
-        & .mglc-about-section-title {
     
-            & h5 {
-                @include mglc-font-montserrat-bold;
-                font-size: 18px;
-            }
+    & .mglc-about-section-title {
+        max-width: $max-width-title;
+        margin: 0 auto;
+        text-align: center;
+    
+        & h5 {
+            @include mglc-font-montserrat-bold;
+            font-size: 18px;
         }
         
 
-       
+        &-mission {
+            @include mglc-font-open-sans-light;
+            font-size: 18px;
+            color: #828282;
+        }
     }
-}
+    &-container {
+        max-width: $max-width-content;
+        height: 450px;
+        margin: 0 auto;
+        display: flex;
+        
+        & .mglc-about-section-text {
+            display: flex;
+            flex-direction: column;
+            max-width: 660px;
+            padding-top: 161px;
+            padding-bottom: 114px;
+
+            & h3 {
+                @include mglc-font-montserrat-bold;
+                font-size: 24px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+
+            & .text {
+                margin-top: 6px;
+                padding-left: 2px;
+                @include mglc-font-montserrat-regular;
+                font-size: 14px;
+                line-height: 30px;
+                color: #6f6f6f;
+            }
+
+            & img {
+                display: inline-block;
+                width: 74px;
+                margin-top: 16px;
+                padding-left: 1px;
+            }
+
+            & .signature {
+                @include mglc-font-open-sans-regular;
+                font-size: 10px;
+                letter-spacing: 1px;
+                margin-top: 13px;
+                padding-left: 2px;
+            }
+        }
+    }
+
+    & .mglc-about-section-item {
+        max-width: $max-width-content;
+        margin-left: 102px;
+        margin-right: 80px;
+        padding-top: 39px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        & .point-services {
+            width: 366px;
+            margin-top: 28px;
+            display: flex;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+
+            &-icon {
+                padding-left: 1px;
+                padding-top: 9px;
+                font-size: 33px;
+            }
+
+            &-info {
+                padding-left: 46px;
+                line-height: 23px;
+
+                &-name-main {
+                    text-transform: uppercase;
+                    @include mglc-font-montserrat-bold;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    margin-bottom: 11px;
+                }
+
+                &-name {
+                    text-transform: uppercase;
+                    @include mglc-font-montserrat-bold;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    margin-bottom: 11px;  
+                }
+
+                &-text {
+                    @include mglc-font-montserrat-regular;
+                    font-size: 13px;
+                    color: #6f6f6f;
+                }
+            }
+        }
+ 
+    } 
+}  
+

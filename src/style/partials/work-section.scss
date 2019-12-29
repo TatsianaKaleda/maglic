@@ -1,3 +1,45 @@
 .mglc-work-section {
-    padding-bottom: 759px;
+    padding-bottom: 824px;
+    &-container {
+        max-width: $max-width-content;
+        padding-top: 66px;
+        margin: 0 auto; 
+
+        &.mglc-work-section-title {
+            & .main-name {
+                @include mglc-font-montserrat-bold;
+                font-size: 24px;
+                color: $text-color;
+            }
+            & .mission {
+                @include mglc-font-open-sans-light;
+                font-size: 18px;
+                color: $text-color;
+            }
+        }
+        
+        & a{
+            width: 72px;
+            height: 30px;
+            padding: 16px 31px;
+            border: 1px solid rgba(255,255,255,.5);
+            align-items: center;
+            text-decoration: none;
+            @include mglc-font-montserrat-regular;
+            font-size: 11px;
+            letter-spacing: 1px;
+            color: $text-color;
+            background: none;
+            transition: .3s;
+
+            &:hover {
+                border: 1px solid rgba(238,176,19,1);
+            }
+        }
+
+        
+    }
+
+    
+    
 }
