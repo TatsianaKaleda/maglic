@@ -37,8 +37,7 @@
 
                 & .nav-item:not(:last-child) {
                     & .nav-link {
-                        padding-left: 3px;
-                        padding-right: 33px;
+                        padding: 0 18px;
                     }
                 }
 
@@ -59,7 +58,7 @@
                     transition: 0.2s;
 
                     &:hover {
-                        font-size: 20px;
+                        transform:scale(1.2,1.2);
                     }
                 }
             }
@@ -104,7 +103,8 @@
                     transition: 0.3s;
 
                     &:hover {
-                        font-size: 20px;
+                        transform: translateX(10px);
+                        border: 3px solid rgba(238,176,19,1);
                     }
                 }
             }

@@ -13,3 +13,8 @@
  * Bootstrap
  */
 //= ../../node_modules/bootstrap/dist/js/bootstrap.js
+
+/*
+ * Lightbox gallery
+ */
+//= ../../node_modules/lightbox2/dist/js/lightbox.js

@@ -1,45 +1,75 @@
 .mglc-work-section {
-    padding-bottom: 824px;
     &-container {
         max-width: $max-width-content;
-        padding-top: 66px;
         margin: 0 auto; 
+        padding-top: 71px;
 
-        &.mglc-work-section-title {
+        &-title {
+            text-align: center;
             & .main-name {
                 @include mglc-font-montserrat-bold;
                 font-size: 24px;
                 color: $text-color;
             }
+
+            & .template-hummer {
+                display: inline-block;
+                margin-top: 11px;
+            }
+
             & .mission {
                 @include mglc-font-open-sans-light;
+                margin-top: 10px;
                 font-size: 18px;
                 color: $text-color;
             }
         }
-        
-        & a{
-            width: 72px;
-            height: 30px;
-            padding: 16px 31px;
-            border: 1px solid rgba(255,255,255,.5);
-            align-items: center;
-            text-decoration: none;
-            @include mglc-font-montserrat-regular;
-            font-size: 11px;
-            letter-spacing: 1px;
-            color: $text-color;
-            background: none;
-            transition: .3s;
+        &-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 47px;
 
-            &:hover {
-                border: 1px solid rgba(238,176,19,1);
+            & button {
+                margin-left: 30px;
+                padding: 10px 24px;
+                border: 1px solid rgba(255,255,255,.5);
+                align-items: center;
+                text-decoration: none;
+                @include mglc-font-montserrat-regular;
+                font-size: 11px;
+                letter-spacing: 1px;
+                color: $text-color;
+                background: none;
+                transition: .3s;
+                    
+                &:hover {
+                    border: 1px solid rgba(238,176,19,1);
+                }
             }
         }
-
+    } 
+    &-galery {
+        margin-top: 17px;
+        display: flex;
+        flex-wrap: wrap;
         
+        & .picture {
+            flex: 0 0 25%;
+            height: 350px;
+            background: rgba(1,1,1,.5);
+            padding: 0;
+        
+            & a {
+                overflow: hidden;
+                position: relative; 
+            
+                & img {
+                    opacity: 1;
+                    transition: 0.3s ease-in-out;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
-
-    
-    
 }
