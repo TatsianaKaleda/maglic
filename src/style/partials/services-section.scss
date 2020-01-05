@@ -31,6 +31,7 @@
             margin-bottom: 20px;
             @include mglc-font-montserrat-bold;
             font-size: 30px;
+            text-transform: uppercase;
             letter-spacing: 2px;
             color: #141414;
         }
@@ -38,6 +39,7 @@
         & .info-text {
             @include mglc-font-open-sans-light;
             font-size: 16px;
+            text-transform: capitalize;
             line-height: 30px;
             color: #828282;
         }
@@ -76,6 +78,7 @@
             & .name {
                 @include mglc-font-montserrat-semi-bold;
                 font-size: 14px;
+                text-transform: uppercase;
                 word-spacing: 5px;
                 padding: 20px 2px 0 32px;
             }
@@ -94,6 +97,7 @@
             text-decoration: none;
             @include mglc-font-montserrat-semi-bold;
             font-size: 18px;
+            text-transform: uppercase;
             color: $text-color;
             background: none;
             cursor: pointer;

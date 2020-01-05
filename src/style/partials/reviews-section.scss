@@ -1,7 +1,7 @@
 .mglc-reviews-section {
     &-container {
         position: relative;
-        padding-bottom: 100px;
+        padding-bottom: 47px;
         background-color: rgba(0, 0, 0, .5);
 
         &-bg {
@@ -9,7 +9,7 @@
             top: 0;
             left: 0;
             z-index: -1;
-            background-image: url("../../img/background/bg1.jpg");
+            background-image: url("../../img/background/bg4.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -18,26 +18,31 @@
         }
 
         &-title {
-            padding-top: 100px;
+            padding-top: 102px;
+            text-align: center;
 
             &-value {
                 @include mglc-font-montserrat-bold;
-                margin-bottom: 20px;
+                margin-bottom: 14px;
                 text-align: center;
                 letter-spacing: 3px;
                 text-transform: uppercase;
                 color: $text-color;
                 font-size: 18px;
+                padding-right: 13px
             }
-        }
 
-        &-subtitle {
-            margin-top: 15px;
-            text-align: center;
+            &-template-hummer {
+                display: inline-block;
+                margin-right: 15px;
+            }
 
-            &-value {
+            &-mission {
+                @include mglc-font-open-sans-light;
+                margin-top: 13px;
+                font-size: 18px;
+                color: #ffffff;
                 text-transform: capitalize;
-                color: $text-color;
             }
         }
 
@@ -48,8 +53,8 @@
 
             &-item {
                 & .review-avatar {
-                    width: 130px;
-                    height: 130px;
+                    width: 140px;
+                    height: 140px;
                     border-radius: 50%;
                     transition: 0.3s;
                     opacity: .6;
@@ -76,21 +81,23 @@
                 align-items: center;
                 justify-content: center;
                 top: 0;
-                margin: -60px auto 0;
-                max-width: 700px;
+                margin: -82px auto 0;
+                max-width: 765px;
                 width: 100%;
                 height: 100%;
 
                 & p {
                     @include mglc-font-open-sans-light-italic;
-                    font-size: 20px;
+                    font-size: 18px;
                     color: $text-color;
                 }
             }
 
             & .carousel-indicators {
+                bottom: 32px;
+                padding-right: 18px;
                 & li {
-                    margin: 0 7px;
+                    margin: 0 5px;
                     width: 12px;
                     height: 12px;
                     border-radius: 50%;
@@ -106,30 +113,31 @@
             position: absolute;
             width: 100%;
             max-width: initial;
-            bottom: 60px;
+            bottom: 94px;
             text-align: center;
             color: $text-color;
 
-            &-additional {
-
-                &-title,
-                &-subtitle {
-                    &-value {
-                        margin: 15px 0 0;
-                        text-transform: uppercase;
-                    }
-                }
-
-                &-title-value {
-                    @include mglc-font-montserrat-regular;
-                    font-size: 14px;
-                }
-
-                &-subtitle-value {
-                    @include mglc-font-open-sans-light;
-                    font-size: 12px;
-                }
+            & .template-triangle {
+                display: inline-block;
+                margin-top: 11px;
             }
+
+            &-title{
+                @include mglc-font-montserrat-regular;
+                margin: 0;
+                padding-top: 20px;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            
+            &-subtitle {
+                @include mglc-font-open-sans-light;
+                margin: 0;
+                padding-top: 11px;
+                font-size: 12px; 
+                text-transform: uppercase;   
+            }
+            
         }
     }
 
@@ -144,10 +152,11 @@
             max-width: $max-width-content;
             width: 100%;
             margin: 0 auto;
-            padding: 30px 0;
+            padding: 25px 0;
 
             &-title {
                 @include mglc-font-open-sans-light;
+                padding-bottom: 5px;
                 color: $text-color;
                 font-size: 24px;
 
@@ -157,14 +166,16 @@
             }
 
             &-button {
+                padding-right: 8px;
                 & button {
                     @include mglc-font-montserrat-bold;
-                    padding: 12px 32px;
+                    padding: 17px 37px;
                     color: $text-color;
                     background   : none;
                     border: 1px solid $text-color;
                     text-transform: uppercase;
                     font-size: 10px;
+                    letter-spacing: 2px;
                     transition: 0.3s;
 
                     &:hover {
