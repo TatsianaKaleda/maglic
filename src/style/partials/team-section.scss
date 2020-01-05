@@ -1,60 +1,126 @@
-.mglc-team-section {
-    
-    & .mglc-team-section-title {
-        max-width:$max-width-title;
-        margin: 0 auto;
+.mglc-team-section {  
+    margin-top: 137px; 
+    margin-bottom: 125px;    
+    &-title {
         text-align: center;
-        padding-top: 47px;
-        
-        & h5 {
+        margin-bottom: 78px;
+          
+        & .main-name {
             @include mglc-font-montserrat-bold;
             font-size: 18px;
+            letter-spacing: 3px;
+            padding-right: 12px;
         }
-    
-        &-icon {
+          
+        & .template-hummer {
             display: inline-block;
-        }
-    
-        &-mission {
+            margin-top: 11px;
+            }
+          
+        & .mission {
             @include mglc-font-open-sans-light;
+            margin-top: 12px;
             font-size: 18px;
             color: #828282;
         }
     }
+        
     & .mglc-team-section-membres {
         max-width: 1180px;
         margin: 0 auto;
+        padding: 0;
         display: flex;
         justify-content: space-between;
 
         & .employee {
             position: relative;
-            width: 370px;
-            height: 426px;
-            margin: 0 30px;
-            background-color: none;
+            height: 423px;
 
-            & .first-name {
+            &-information {
                 position: absolute;
                 bottom: 0;
                 border-top: 1px solid white;
                 width: 370px;
-                @include mglc-font-montserrat-bold;
-                text-transform: uppercase;
-                font-size: 14px;
-                color: $text-color;
-            }
+                padding-left: 17px;
+                // display: flex;
 
-            & .profession {
-                @include mglc-font-open-sans-light-italic;
-                text-transform: uppercase;
-                font-size: 12px;
-                color:$text-color;
-            }
+                // & .line {
+                //     flex: 0 0 80px;
+                //     width: 80px;
+                //     height: 1px;
+                //     background: #d0d0d0;
+                // }
 
+                & .first-name {
+                    @include mglc-font-montserrat-bold;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    color: $text-color;
+                }
+
+                & .profession {
+                    @include mglc-font-open-sans-light-italic;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    color:$text-color;
+                
+                }
+            }
+            
             & .avatar {
                 overflow: hidden;
+                width: 370px;
+                height: 420px;
             }
         }
+    }
+    & .mglc-team-section-container {
+        max-width: $max-width-content;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        &-about {
+            margin-top: 52px;
+            width: 781px;
+            & .text-title {
+            @include mglc-font-montserrat-bold;
+            font-size: 24px;
+            letter-spacing: 2px;
+            }
+
+            & .text-description {
+                @include mglc-font-montserrat-regular;
+                margin-top: 30px;
+                font-size: 14px;
+                line-height: 30px;
+                color:#828282;
+            }
+        }
+        &-button {
+            margin-top: 89px;
+            margin-right: 12px;
+            text-align: center;
+    
+            & button{
+                padding: 24px 54px;
+                border: 1px solid rgba(20,20,20,.8);
+                align-items: center;
+                text-decoration: none;
+                @include mglc-font-montserrat-regular;
+                font-size: 14px;
+                letter-spacing: 5px;
+                background: none;
+                cursor: pointer;
+                // transition: 0.3s;
+                transition: box-shadow .3s;
+    
+                &:hover {
+                    // transform: translateX(10px);
+                    // border: 1px solid rgba(238,176,19,1);
+                    box-shadow: 3px 3px 3px rgba(33,33,33,.6);
+                }
+            }
+        }   
     }
 }

@@ -22,7 +22,7 @@
                 @include mglc-font-open-sans-light;
                 margin-top: 10px;
                 font-size: 18px;
-                color: $text-color;
+                color: #ffffff;
             }
         }
   
@@ -45,7 +45,7 @@
             transition: .3s;
   
                 &:hover {
-                    border: 1px solid rgba(238, 176, 19, 1);
+                    border: 1px solid $yellow-color;
                 }
   
                 &:focus {
@@ -53,7 +53,7 @@
                 }
   
                 &.active {
-                    background-color: rgba(238, 176, 19, 1);
+                    background-color: $yellow-color;
                 }
             }
         }

@@ -1,5 +1,65 @@
 .mglc-facts-section {
-    background: url("../../img/background/bg3.jpg") no-repeat;
-    background-size: cover;
+    position: relative;
+    background-color: rgba(0, 0, 0, .5);
     height: 320px;
+    &-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: url("../../img/background/bg3.jpg") no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        background-attachment: fixed;
+    }
+
+    &-container {
+        max-width: $max-width-content;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        &-points {
+            position: relative;
+            flex: 0 0 25%;
+            text-align: center;
+            margin-top: 86px;
+            height: 163px;
+            transition: .3s;
+
+            & .indicator {
+                @include mglc-font-montserrat-regular;
+                font-size: 48px;
+                color: $text-color;
+            }
+
+            & .indicator-text {
+                @include mglc-font-montserrat-bold;
+                font-size: 18px;
+                color: $text-color;
+            }
+
+            & .line {
+                position: absolute;
+                bottom: 0;
+                left: 110px;
+                width: 55px;
+                height: 1px;
+                background: #d0d0d0;
+                height: 3px;
+            }  
+        }
+        &-points:hover {
+            & .line {
+                position: absolute;
+                bottom: 0;
+                left: 110px;
+                width: 55px;
+                height: 1px;
+                background: $yellow-color;
+                height: 3px;
+            }
+        }
+    }
 }

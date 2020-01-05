@@ -1,15 +1,9 @@
 .mglc-hammer-container {
-    // background: black;//TODO: temporary
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: $max-width-title;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-
-    // &:hover {
-    //     & .mglc-hummer-container-line {
-    //         background: red;
-    //     }
-    // }
 
     &-line {
         flex: 0 0 80px;

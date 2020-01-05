@@ -57,7 +57,7 @@
             &:hover {
                 & .far, 
                 & .fas {
-                    border: 2px solid rgba(238,176,19,1);
+                    border: 2px solid $yellow-color;
                 }  
                 & .name {
                     transform: scale(1.1, 1.1);
@@ -101,7 +101,7 @@
 
             &:hover {
                 transform: translateX(10px);
-                border: 1px solid rgba(238,176,19,1);
+                border: 1px solid $yellow-color;
             }
         }
     }   

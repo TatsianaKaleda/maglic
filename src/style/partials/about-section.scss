@@ -1,7 +1,7 @@
 .mglc-about-section {
     position: relative;
     background-color: rgba(255, 255, 255, 0);
-    padding-bottom: 123px;
+    padding-bottom: 96px;
    
     &-bg {
         position: absolute;
@@ -41,7 +41,7 @@
     }
     &-container {
         max-width: $max-width-content;
-        height: 450px;
+        height: 422px;
         margin: 0 auto;
         display: flex;
         
@@ -87,8 +87,7 @@
 
     & .mglc-about-section-item {
         max-width: $max-width-content;
-        margin-left: 102px;
-        margin-right: 80px;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -96,6 +95,7 @@
         & .point-services {
             width: 366px;
             margin-top: 28px;
+            margin-bottom: 28px;
             display: flex;
             justify-content: space-between;
             transition: all 0.3s ease;
@@ -109,14 +109,6 @@
             &-info {
                 padding-left: 46px;
                 line-height: 23px;
-
-                &-name-main {
-                    text-transform: uppercase;
-                    @include mglc-font-montserrat-bold;
-                    font-size: 16px;
-                    letter-spacing: 1px;
-                    margin-bottom: 11px;
-                }
 
                 &-name {
                     text-transform: uppercase;
