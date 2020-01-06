@@ -1,0 +1,82 @@
+.mglc-contact-section {
+    &-title {
+        margin-top: 89px;
+        margin-bottom: 79px;
+        text-align: center;
+          
+        &-value {
+            @include mglc-font-montserrat-bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding-right: 3px;
+        }
+          
+        & .template-hummer {
+            display: inline-block;
+            margin-top: 11px;
+            }
+          
+        &-mission {
+            @include mglc-font-open-sans-light;
+            margin-top: 12px;
+            font-size: 18px;
+            text-transform: capitalize;
+            color: $grey-color-2;
+        }
+    }
+
+    &-container {
+        max-width: $max-width-content;
+        margin: 0 auto;
+
+        &-bg {
+            background: #1c1c1c;
+            height: 714px;
+
+            & .mglc-services-section-container-icons {
+                display: flex;
+                justify-content: space-between;
+        
+                & .icon {
+                    display: flex;
+                    margin-top: 24px;
+                    cursor: pointer;
+                    transition: .3s;
+        
+                    &:hover {
+                        & .far, 
+                        & .fas {
+                            border: 2px solid $yellow-color;
+                        }  
+                        & .detail {
+                            transform: scale(1.1, 1.1);
+                        }
+                    }
+        
+                    & .far, 
+                    & .fas {
+                        padding: 20px;
+                        font-size: 51px;
+                        color: $yellow-color;
+                        border: 2px solid #d8d8d8;
+                        border-radius: 50%;
+                        
+                        
+                    }
+        
+                    & .detail {
+                        @include mglc-font-open-sans-italic;
+                        padding: 20px 2px 0 32px;
+                        font-size: 16px;
+                        text-transform: capitalize;
+                        word-spacing: 5px;
+                        color: $grey-color-2;
+                    }
+        
+                }
+            }
+        }
+        
+    }
+}

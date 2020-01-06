@@ -1,0 +1,197 @@
+.mglc-pricing-section {
+    margin-top: 110px; 
+    margin-bottom: 89px;    
+    &-title {
+        text-align: center;
+        margin-bottom: 71px;
+          
+        &-value {
+            @include mglc-font-montserrat-bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding-right: 12px;
+        }
+          
+        & .template-hummer {
+            display: inline-block;
+            margin-top: 11px;
+            }
+          
+        &-mission {
+            @include mglc-font-open-sans-light;
+            margin-top: 12px;
+            font-size: 18px;
+            text-transform: capitalize;
+            color: $grey-color-2;
+        }
+    }
+
+    &-container {
+        max-width: $max-width-content;
+        margin: 0 auto;
+        
+        &-heading {
+            display: flex;
+            justify-content: center;
+            padding-right: 44px;
+            letter-spacing: 2px;
+    
+
+            &-part1 {
+                @include mglc-font-montserrat-semi-bold;
+                padding-right: 6px;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+
+            &-part2 {
+                @include mglc-font-montserrat-regular;
+                padding-right: 6px;
+                font-size: 18px;
+                text-transform: capitalize;
+                color: $grey-color-2;
+            }
+
+            &-part3 {
+                @include mglc-font-open-sans-light-italic;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+        }
+
+        &-cards {
+            margin-top: 74px;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+
+            & .card {
+                width: 25%;
+                &-body {
+                    border-bottom: 1px solid rgba(130, 130, 130,.2);
+                }
+                &-title {
+                    @include mglc-font-montserrat-bold;
+                    margin-top: 4px;
+                    margin-bottom: 3px;
+                    font-size: 14px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                & .list-group {
+                    margin-bottom: 22px;
+                    padding: 0;
+                    list-style-type: none;
+
+                    &-item {
+                        @include mglc-font-montserrat-regular;
+                        padding-bottom: 29px;
+                        font-size: 12px;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        text-transform: capitalize;
+                        color: $grey-color-2;
+                        border-bottom: none;
+
+                        & i {
+
+                        }
+
+                        & p {
+                            @include mglc-font-montserrat-regular;
+                            display: inline-block;
+                            font-size: 50px;
+                        }
+                        & span {
+                            @include mglc-font-open-sans-light-italic;
+                            font-size: 14px;
+                            text-transform: lowercase;
+                        }
+                    }
+                }
+            }
+        }
+
+        // &-cards {
+        //     margin-top: 74px;
+        //     padding: 0;
+        //     display: flex;
+        //     justify-content: space-between;
+            
+
+        //     & .card-information {
+        //         display: flex;
+        //         justify-content: space-between;
+
+        //         & .card {
+        //             &-title {
+        //                 @include mglc-font-montserrat-bold;
+        //                 margin-top: 22px;
+        //                 margin-bottom: 56px;
+        //                 font-size: 14px;
+        //                 text-align: center;
+        //                 text-transform: uppercase;
+        //             }
+
+        //             &-list {
+        //                 margin-bottom: 22px;
+        //                 padding: 0;
+        //                 list-style-type: none;
+
+        //                 & li {
+        //                     @include mglc-font-montserrat-regular;
+        //                     padding-bottom: 29px;
+        //                     letter-spacing: 1px;
+        //                     text-align: center;
+        //                     font-size: 12px;
+        //                     text-transform: capitalize;
+        //                     color: $grey-color-2;
+        //                 }
+        //             }
+
+        //             &-price {
+        //                 & p {
+        //                     @include mglc-font-montserrat-regular;
+        //                     display: inline-block;
+        //                     font-size: 50px;
+        //                 }
+
+        //                 & span {
+        //                     @include mglc-font-open-sans-light-italic;
+        //                     font-size: 14px;
+        //                 }
+                        
+                    
+        //             }
+        //         }
+
+        //     }
+        // }
+        &-button {
+            margin-top: 4px;
+            margin-left: 356px;
+    
+            & button{
+                @include mglc-font-montserrat-bold;
+                padding: 10px 43px;
+                background: none;
+                border: 1px solid rgba(20,20,20,.8);
+                font-size: 12px;
+                align-items: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                cursor: pointer;
+                transition: 0.3s;
+                
+    
+                &:hover {
+                    transform: translateX(10px);
+                    border: 1px solid $yellow-color;
+                   
+                }
+            }
+        }
+    }
+}
