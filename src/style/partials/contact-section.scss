@@ -1,82 +1,178 @@
 .mglc-contact-section {
     &-title {
-        margin-top: 89px;
-        margin-bottom: 79px;
-        text-align: center;
-          
-        &-value {
-            @include mglc-font-montserrat-bold;
-            font-size: 18px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            padding-right: 3px;
-        }
-          
-        & .template-hummer {
-            display: inline-block;
-            margin-top: 11px;
-            }
-          
-        &-mission {
-            @include mglc-font-open-sans-light;
-            margin-top: 12px;
-            font-size: 18px;
-            text-transform: capitalize;
-            color: $grey-color-2;
-        }
+      margin-top: 89px;
+      margin-bottom: 79px;
+      text-align: center;
+  
+      &-value {
+        @include mglc-font-montserrat-bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-right: 3px;
+      }
+  
+      & .template-hummer {
+        display: inline-block;
+        margin-top: 11px;
+      }
+  
+      &-mission {
+        @include mglc-font-open-sans-light;
+        margin-top: 12px;
+        font-size: 18px;
+        text-transform: capitalize;
+        color: $grey-color-2;
+      }
     }
-
+  
     &-container {
+      padding: 100px 0;
+      background: #1c1c1c;
+  
+      &-bg {
         max-width: $max-width-content;
+        width: 100%;
         margin: 0 auto;
-
-        &-bg {
-            background: #1c1c1c;
-            height: 714px;
-
-            & .mglc-services-section-container-icons {
-                display: flex;
-                justify-content: space-between;
-        
-                & .icon {
-                    display: flex;
-                    margin-top: 24px;
-                    cursor: pointer;
-                    transition: .3s;
-        
-                    &:hover {
-                        & .far, 
-                        & .fas {
-                            border: 2px solid $yellow-color;
-                        }  
-                        & .detail {
-                            transform: scale(1.1, 1.1);
-                        }
-                    }
-        
-                    & .far, 
-                    & .fas {
-                        padding: 20px;
-                        font-size: 51px;
-                        color: $yellow-color;
-                        border: 2px solid #d8d8d8;
-                        border-radius: 50%;
-                        
-                        
-                    }
-        
-                    & .detail {
-                        @include mglc-font-open-sans-italic;
-                        padding: 20px 2px 0 32px;
-                        font-size: 16px;
-                        text-transform: capitalize;
-                        word-spacing: 5px;
-                        color: $grey-color-2;
-                    }
-        
-                }
+      }
+  
+      &-icons {
+        margin-bottom: 50px;
+  
+        & .icon {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          transition: .3s;
+  
+          &:hover {
+            & .icon-container {
+              border-color: $yellow-color;
             }
+          }
+  
+          &-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 75px;
+            width: 75px;
+            border: 1px solid $grey-color-7;
+            border-radius: 50%;
+            transition: .3s;
+  
+            & .far,
+            & .fas {
+              font-size: 32px;
+              color: $yellow-color;
+            }
+          }
+  
+          &-detail {
+            @include mglc-font-open-sans-italic;
+            margin-bottom: 0;
+            padding-left: 32px;
+            font-size: 16px;
+            text-transform: capitalize;
+            word-spacing: 5px;
+            color: $text-color;
+          }
         }
-        
+      }
+  
+      &-form {
+        & .input-group {
+          &-text {
+            @include mglc-font-open-sans-italic;
+            padding-left: 0;
+            background: none;
+            color: $text-color;
+            border: none;
+            text-transform: uppercase;
+            font-size: 10px;
+  
+            & span {
+              margin-right: 5px;
+              font-size: 16px;
+              color: $yellow-color;
+            }
+          }
+  
+          & .form-control {
+            background: none;
+            border: none;
+            color: $text-color;
+          }
+        }
+  
+        & .form-textarea-content {
+          @include mglc-font-open-sans-italic;
+          padding-left: 0;
+          color: $text-color;
+          text-transform: uppercase;
+          font-size: 10px;
+        }
+  
+        & textarea {
+          background: none;
+          border-right: none;
+          border-top: none;
+          border-left: none;
+          border-radius: 0;
+          border-bottom: 1px solid $grey-color-2;
+  
+          &:focus {
+            background: none;
+            color: $text-color;
+            border-color: $yellow-color;
+            outline: none;
+            box-shadow: none;
+          }
+        }
+  
+        & .form-content-container {
+          margin: 25px 0;
+        }
+  
+        & .form-item {
+          padding: 0 15px;
+  
+          &:first-child {
+            padding-left: 0;
+          }
+  
+          &:last-child {
+            padding-right: 0;
+          }
+  
+          & .input-group-text, & .form-control {
+            border-bottom: 1px solid $grey-color-2;
+            border-radius: 0;
+          }
+  
+          & .form-control:focus {
+            box-shadow: none;
+          }
+        }
+  
+        & .contact-form-submit {
+          text-align: right;
+  
+          &-btn {
+            @include mglc-font-montserrat-regular;
+            padding: 10px 43px;
+            background: none;
+            border: 1px solid $text-color;
+            color: $text-color;
+            text-transform: uppercase;
+            font-size: 12px;
+            transition: .3s;
+  
+            &:hover {
+              border-color: $yellow-color;
+            }
+          }
+        }
+      }
     }
-}
+  }

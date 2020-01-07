@@ -1,0 +1,174 @@
+.mglc-services-page {
+    margin-bottom: 100px;
+    &-container {
+        max-width: $max-width-content;
+        margin: 0 auto;
+        padding-top: 71px;
+  
+        &-title {
+            text-align: center;
+  
+            &-value {
+                @include mglc-font-montserrat-bold;
+                font-size: 24px;
+                color: black-color-2;
+            }
+  
+            & .template-hummer {
+                display: inline-block;
+                margin-top: 11px;
+            }
+  
+            &-mission {
+                @include mglc-font-montserrat-bold;
+                margin-top: 25px;
+                font-size: 18px;
+                color: $grey-color-4;
+            }
+        }
+
+        &-list {
+            margin-top: 90px;
+            display: grid;
+            grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+ 
+            &-design {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+
+            &-photo {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+
+            &-art {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+
+            &-graphics {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            &-animation {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            &-3D {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            &-design, 
+            &-photo, 
+            &-art, 
+            &-graphics, 
+            &-animation, 
+            &-3D {
+                text-align: center;
+                padding: 20px;
+            }
+
+                & .icon {
+                    display: inline-block;
+                    font-size: 50px;
+                    border: 2px solid #d8d8d8;
+                    border-radius: 50%;
+                    padding: 28px 38px;
+
+                    &:hover {
+                        border: 2px solid $yellow-color;
+                    }
+                }
+
+                & .text {
+                    @include mglc-font-montserrat-semi-bold;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    word-spacing: 5px;
+                    padding: 20px 0;
+                }
+
+                & .main-button {
+                    @include mglc-font-montserrat-regular;
+                    padding: 10px 19px;
+                    border: 1px solid $grey-color-5;
+                    align-items: center;             
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    letter-spacing: 3px;
+                    background: none;
+                    cursor: pointer;
+                    transition: .3s;
+        
+                    &:hover {
+                        border: 1px solid $yellow-color;
+                    }
+
+                    & p{
+                        margin: 0;
+                    }
+                } 
+                
+                & .modal-title {
+                    @include mglc-font-montserrat-bold;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    margin: 0 auto;
+                }
+
+                & .close {
+                    padding: 0 5px;
+                    border: 1px solid $grey-color-5;
+                    align-items: center;             
+                    background: none;
+                    cursor: pointer;
+                    transition: .3s;
+
+                    & span{
+                        @include mglc-font-montserrat-regular;
+                        font-size: 22px;
+                        text-transform: uppercase;
+                    }
+                }
+
+                & .modal-body {
+                    @include mglc-font-montserrat-regular;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    text-align: center;
+                }
+
+                & .btn-close,
+                & .btn-save {
+                    @include mglc-font-montserrat-regular;
+                    padding: 10px 19px;
+                    border: 1px solid $grey-color-5;
+                    align-items: center;             
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    background: none;
+                    cursor: pointer; 
+                    transition: .3s;
+                }
+            
+        }
+    }
+}

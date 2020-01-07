@@ -68,13 +68,15 @@
                 color: #6f6f6f;
             }
 
-            & img {
-                display: inline-block;
-                width: 74px;
+            & .line {
+                height: 1px;
+                width: 80px;
+                flex: 0 0 1px;
                 margin-top: 16px;
                 padding-left: 1px;
+                background-color: black;
             }
-
+            
             & .signature {
                 @include mglc-font-open-sans-regular;
                 font-size: 10px;

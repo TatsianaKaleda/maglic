@@ -1,4 +1,5 @@
 <section class="mglc-contact-section" id="contact">
+
     <div class="mglc-contact-section-title">
         <h3 class="mglc-contact-section-title-value">
             GET IN TOUCH
@@ -12,41 +13,142 @@
             Support Fast & Pro 24/7
         </p>
     </div>
+
     <div class="mglc-contact-section-container">
         <div class="mglc-contact-section-container-bg">
             <div class="container-fluid mglc-contact-section-container-icons">
                 <div class="row">
                     <div class="icon-information col-xl-4">
                         <div class="icon">
-                            <i class="fas fa-mobile-alt"></i>
-                            <p class="icon-detail">
-                                +61 3 8376 6284 </br>
-                                +61 4 5873 2984
-                            </p>
+                            <div class="icon-container">
+                                <i class="fas fa-mobile-alt">
+                                </i>
+                            </div>
+
+                            <div class="detail-container">
+                                <p class="icon-detail">
+                                    +61 3 8376 6284
+                                </p>
+
+                                <p class="icon-detail">
+                                    +61 4 5873 2984
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                     <div class="icon-information col-xl-4">
                         <div class="icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <p class="icon-detail">
-                                PO Box 21177 </br>
-                                Litte Lonsdale St, Melbourne </br>
-                                Victoria 8011 Austral
-                            </p>
+                            <div class="icon-container">
+                                <i class="fas fa-map-marker-alt">
+                                </i>
+                            </div>
+
+                            <div class="detail-container">
+                                <p class="icon-detail">
+                                    PO Box 21177
+                                </p>
+
+                                <p class="icon-detail">
+                                    Litte Lonsdale St, Melbourne
+                                </p>
+
+                                <p class="icon-detail">
+                                    Victoria 8011 Austral
+                                </p>
+                            </div>
                         </div>
                     </div>
+
                     <div class="icon-information col-xl-4">
                         <div class="icon">
-                            <i class="far fa-envelope"></i>
-                            <p class="icon-detail">
-                                support@yourcompany.com
-                            </p>
+                            <div class="icon-container">
+                                <i class="far fa-envelope">
+                                </i>
+                            </div>
+
+                            <div class="detail-container">
+                                <p class="icon-detail">
+                                    support@yourcompany.com
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <div class="mglc-contact-section-container-form">
+                <form class="needs-validation" novalidate>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3 form-item">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputNamePrepend">
+                                        <span>*</span>
+                                        name
+                                    </span>
+                                </div>
+
+                                <input type="text" class="form-control" id="validationCustomUsername" placeholder=""
+                                    aria-describedby="inputNamePrepend" required>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-3 form-item">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputEmailPrepend">
+                                        <span>*</span>
+                                        email
+                                    </span>
+                                </div>
+
+                                <input type="text" class="form-control" id="validationCustomEmail" placeholder=""
+                                    aria-describedby="inputEmailPrepend" required>
+                                <div class="invalid-feedback">
+                                    Please choose a email.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-3 form-item">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputSubjectPrepend">
+                                        <span>*</span>
+                                        subject
+                                    </span>
+                                </div>
+
+                                <input type="text" class="form-control" id="validationCustomSubject" placeholder=""
+                                    aria-describedby="inputSubjectPrepend" required>
+                                <div class="invalid-feedback">
+                                    Please choose a subject.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row form-content-container">
+                        <label for="formControlTextarea" class="form-textarea-content">
+                            content
+                        </label>
+
+                        <textarea class="form-control" id="formControlTextarea" rows="3">
+                            </textarea>
+                    </div>
+
+                    <div class="contact-form-submit">
+                        <button class="contact-form-submit-btn" type="submit">
+                            send me
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
 </section>

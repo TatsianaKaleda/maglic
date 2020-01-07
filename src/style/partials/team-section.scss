@@ -110,12 +110,9 @@
                 letter-spacing: 5px;
                 background: none;
                 cursor: pointer;
-                // transition: 0.3s;
                 transition: box-shadow .3s;
     
                 &:hover {
-                    // transform: translateX(10px);
-                    // border: 1px solid rgba(238,176,19,1);
                     box-shadow: 3px 3px 3px rgba(33,33,33,.6);
                 }
             }
