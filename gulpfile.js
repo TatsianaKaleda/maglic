@@ -19,7 +19,7 @@ var path = {
         html: 'build/',
         js: 'build/js/',
         css: 'build/css/',
-        img: 'build/img/',
+        img: 'build/images/',
         fonts: 'build/fonts/',
         webfonts: 'build/webfonts/'
     },
@@ -27,7 +27,7 @@ var path = {
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
         js: 'src/js/main.js',//В стилях и скриптах нам понадобятся только main файлы
         style: 'src/style/main.scss',
-        img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
+        img: 'src/images/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'src/fonts/**/*.*',
         webfonts: 'node_modules/@fortawesome/fontawesome-free-webfonts/webfonts/*.*'
     },
@@ -35,7 +35,7 @@ var path = {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.scss',
-        img: 'src/img/**/*.*',
+        img: 'src/images/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     clean: './build'

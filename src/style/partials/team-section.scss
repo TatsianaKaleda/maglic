@@ -1,6 +1,7 @@
-.mglc-team-section {  
-    margin-top: 137px; 
-    margin-bottom: 125px;    
+.mglc-team-section {
+    margin-top: 137px;
+    margin-bottom: 125px;
+
     &-title {
         text-align: center;
         margin-bottom: 78px;
@@ -16,7 +17,7 @@
         & .template-hummer {
             display: inline-block;
             margin-top: 11px;
-            }
+        }
           
         &-mission {
             @include mglc-font-open-sans-light;
@@ -72,18 +73,21 @@
             }
         }
     }
+
     & .mglc-team-section-container {
         max-width: $max-width-content;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
+
         &-about {
             margin-top: 52px;
             width: 781px;
+
             & .text-title {
-            @include mglc-font-montserrat-bold;
-            font-size: 24px;
-            letter-spacing: 2px;
+                @include mglc-font-montserrat-bold;
+                font-size: 24px;
+                letter-spacing: 2px;
             }
 
             & .text-description {
@@ -94,6 +98,7 @@
                 color:$grey-color-2;
             }
         }
+
         &-button {
             margin-top: 89px;
             margin-right: 12px;

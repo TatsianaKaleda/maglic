@@ -9,13 +9,14 @@
             top: 0;
             left: 0;
             z-index: -1;
-            background-image: url("../img/background/bg1.jpg");
+            background-image: url("../images/background/bg1.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             height: 100%;
             width: 100%;
         }
+
         & .mglc-header {
             display: flex;
             align-items: end;
@@ -31,6 +32,7 @@
                     transform: rotateZ(20deg);
                 }
             }
+
             & .navbar {
                 margin-top: 19px;
                 padding: 0;
@@ -63,6 +65,7 @@
                 }
             }
         }
+
         & .carousel {
             height: 550px;
             transition: .3s;

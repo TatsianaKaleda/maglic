@@ -9,7 +9,7 @@
             top: 0;
             left: 0;
             z-index: -1;
-            background-image: url("../img/background/bg4.jpg");
+            background-image: url("../images/background/bg4.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -96,6 +96,7 @@
             & .carousel-indicators {
                 bottom: 32px;
                 padding-right: 18px;
+
                 & li {
                     margin: 0 5px;
                     width: 12px;
@@ -167,6 +168,7 @@
 
             &-button {
                 padding-right: 8px;
+
                 & button {
                     @include mglc-font-montserrat-bold;
                     padding: 17px 37px;

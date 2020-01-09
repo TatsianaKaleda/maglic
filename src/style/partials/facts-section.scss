@@ -2,16 +2,16 @@
     position: relative;
     background-color: rgba(0, 0, 0, .5);
     height: 320px;
+
     &-bg {
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
-        background: url("../img/background/bg3.jpg") no-repeat;
+        background: url("../images/background/bg3.jpg") no-repeat fixed;
         background-size: cover;
         height: 100%;
         width: 100%;
-        background-attachment: fixed;
     }
 
     &-container {
@@ -45,7 +45,6 @@
                 bottom: 0;
                 left: 110px;
                 width: 55px;
-                height: 1px;
                 background: #d0d0d0;
                 height: 3px;
             }  
@@ -56,7 +55,6 @@
                 bottom: 0;
                 left: 110px;
                 width: 55px;
-                height: 1px;
                 background: $yellow-color;
                 height: 3px;
             }

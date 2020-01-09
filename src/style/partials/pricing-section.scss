@@ -1,6 +1,7 @@
 .mglc-pricing-section {
-    margin-top: 110px; 
-    margin-bottom: 89px;    
+    margin-top: 110px;
+    margin-bottom: 89px;
+
     &-title {
         text-align: center;
         margin-bottom: 71px;
@@ -73,6 +74,7 @@
                 &-body {
                     border-bottom: 1px solid rgba(130, 130, 130,.2);
                 }
+
                 &-title {
                     @include mglc-font-montserrat-bold;
                     margin-top: 4px;
@@ -81,6 +83,7 @@
                     text-align: center;
                     text-transform: uppercase;
                 }
+
                 & .list-group {
                     margin-bottom: 22px;
                     padding: 0;
@@ -154,6 +157,7 @@
                         transition: 0.3s;
                     }
                 }
+
                 &:hover {
                     box-shadow: 3px 3px 7px rgba(33,33,33,.6);
 
@@ -161,7 +165,6 @@
                         opacity: 1;
                         border: 1px solid $yellow-color;
                         background: $color-button;
-                        
                     }
                 }
             }

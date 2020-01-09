@@ -32,18 +32,18 @@
             margin-top: 47px;
   
             & .gallery-filter {
-            margin-left: 15px;
-            margin-right: 15px;
-            padding: 10px 24px;
-            border: 1px solid rgba(255, 255, 255, .5);
-            align-items: center;
-            text-decoration: none;
-            @include mglc-font-montserrat-regular;
-            font-size: 11px;
-            letter-spacing: 1px;
-            color: $text-color;
-            background: none;
-            transition: .3s;
+                @include mglc-font-montserrat-regular;
+                margin-left: 15px;
+                margin-right: 15px;
+                padding: 10px 24px;
+                border: 1px solid rgba(255, 255, 255, .5);
+                align-items: center;
+                text-decoration: none;
+                font-size: 11px;
+                letter-spacing: 1px;
+                color: $text-color;
+                background: none;
+                transition: .3s;
   
                 &:hover {
                     border: 1px solid $yellow-color;
