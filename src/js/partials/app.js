@@ -49,4 +49,9 @@ $(document).ready(function ($) {
         delay: 10,
         time: 1000
     });
+
+    $( "a.scrollLink" ).click(function( event ) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
+    });
 });
