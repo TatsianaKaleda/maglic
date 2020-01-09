@@ -19,7 +19,7 @@ $('#myCarousel').on('slide.bs.carousel', function (e) {
 });
 
 function goToServicesPage() {
-    window.location.href = "../services-page.html";
+    window.location.href = "services-page.html";
 } 
 
 (function () {
