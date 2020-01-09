@@ -1,0 +1,22 @@
+@media screen and (max-width: 1000px) {
+    &-info {
+        margin: 0 auto;
+    }
+
+    &-icons {
+        max-width: 640px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+
+        & .icon-services {
+            
+
+            & .name {
+                padding: 20px 2px 0 10px;
+            }
+        }
+    }
+}
+
+    
+

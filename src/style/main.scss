@@ -29,9 +29,20 @@
 @import "./partials/app";
 
 /*
+* preloader
+*/
+@import "./partials/preloader";
+
+
+/*
 * Top-section
 */
 @import "./partials/top-section";
+
+/*
+* m-top-section
+*/
+@import "./partials/media/m-top-section";
 
 /*
 * Web fonts
@@ -45,6 +56,11 @@
 * Services-section
 */
 @import "./partials/services-section";
+
+/*
+* m-services-section
+*/
+@import "./partials/media/m-services-section";
 
 /*
 * Work-section

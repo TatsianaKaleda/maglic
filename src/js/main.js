@@ -18,3 +18,8 @@
  * Lightbox gallery
  */
 //= ../../node_modules/lightbox2/dist/js/lightbox.js
+
+/*
+ * Counterup
+ */
+//= ../../node_modules/jquery.counterup/jquery.counterup.js

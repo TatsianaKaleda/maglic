@@ -37,3 +37,16 @@ function goToServicesPage() {
         });
     }, false);
 })();
+
+$(window).on('load', function() {
+    $('#status').fadeOut();
+    $('#preloader').delay(350).fadeOut('slow');
+    $('body').delay(350).css({'overflow':'visible'});
+});
+
+$(document).ready(function ($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+});
