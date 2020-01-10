@@ -1,7 +1,8 @@
 .mglc-facts-section {
     position: relative;
     background-color: rgba(0, 0, 0, .5);
-    height: 320px;
+    padding-top: 16px;
+    padding-bottom: 31px;
 
     &-bg {
         position: absolute;
@@ -16,41 +17,41 @@
 
     &-container {
         max-width: $max-width-content;
-        margin: 0 auto;
+        margin: 70px auto 55px;
         display: flex;
         justify-content: space-between;
 
         &-points {
-            position: relative;
             flex: 0 0 25%;
             text-align: center;
-            margin-top: 86px;
-            height: 163px;
             transition: .3s;
 
             & .indicator {
                 @include mglc-font-montserrat-regular;
+                margin-bottom: 30px;
                 font-size: 48px;
                 color: $text-color;
             }
 
             & .indicator-text {
                 @include mglc-font-montserrat-bold;
+                position: relative;
                 font-size: 18px;
                 color: $text-color;
-            }
 
-            & .line {
-                position: absolute;
-                bottom: 0;
-                left: 110px;
-                width: 55px;
-                background: #d0d0d0;
-                height: 3px;
-            }  
-        }
+                &:before {
+                    position: absolute;
+                    top: 43px;
+                    left: 111px;
+                    content: '';
+                    height: 3px;
+                    width: 55px;
+                    background:#d0d0d0;
+                }
+            }
+        }    
         &-points:hover {
-            & .line {
+            & .indicator-text::before {
                 position: absolute;
                 bottom: 0;
                 left: 110px;
@@ -58,6 +59,7 @@
                 background: $yellow-color;
                 height: 3px;
             }
+            
         }
     }
 }

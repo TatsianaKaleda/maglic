@@ -1,7 +1,7 @@
 /*
  * Third party
  */
-//= ../../bower_components/jquery/dist/jquery.js
+//= ../../bower_components/jquery/dist/jquery.min.js
 
 
 /*
@@ -12,14 +12,14 @@
 /*
  * Bootstrap
  */
-//= ../../node_modules/bootstrap/dist/js/bootstrap.js
+//= ../../node_modules/bootstrap/dist/js/bootstrap.min.js
 
 /*
  * Lightbox gallery
  */
-//= ../../node_modules/lightbox2/dist/js/lightbox.js
+//= ../../node_modules/lightbox2/dist/js/lightbox.min.js
 
 /*
  * Counterup
  */
-//= ../../node_modules/jquery.counterup/jquery.counterup.js
+//= ../../node_modules/jquery.counterup/jquery.counterup.min.js

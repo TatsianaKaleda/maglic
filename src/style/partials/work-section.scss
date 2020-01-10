@@ -2,7 +2,7 @@
     &-container {
         max-width: $max-width-content;
         margin: 0 auto;
-        padding-top: 71px;
+        padding-top: 86px;
   
         &-title {
         text-align: center;
@@ -11,6 +11,7 @@
                 @include mglc-font-montserrat-bold;
                 font-size: 24px;
                 color: $text-color;
+                text-transform: uppercase;
             }
   
             & .template-hummer {

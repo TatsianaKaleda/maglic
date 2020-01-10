@@ -41,12 +41,11 @@
         display: flex;
         justify-content: space-between;
         max-width: 742px;
-        margin: 0 auto;
+        margin: 38px auto 0;
 
         & .icon-services {
             display: flex;
             flex-wrap: wrap;
-            margin-top: 24px;
             cursor: pointer;
             transition: .3s;
 
@@ -75,14 +74,15 @@
                 font-size: 14px;
                 text-transform: uppercase;
                 word-spacing: 5px;
-                padding: 20px 2px 0 32px;
+                margin: 0;
+                padding: 25px 6px 25px 32px;
             }
 
         }
     }
 
     &-button {
-        margin: 82px auto 14px;
+        margin: 82px auto 0;
         text-align: center;
 
         & button {
