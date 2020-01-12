@@ -1,11 +1,11 @@
 .mglc-about-section {
     position: relative;
-    padding: 47px 0 65px;
+    padding: 47px 16px 96px;
     background-color: rgba(255, 255, 255, 0);
    
     &-bg {
         position: absolute;
-        top: 163px;
+        top: 115px;
         right: 94px;
         z-index: -1;
         background-image: url("../images/background/phone.png");
@@ -41,16 +41,15 @@
 
     &-container {
         max-width: $max-width-content;
-        height: 422px;
         margin: 0 auto;
         display: flex;
         
         &-text {
             display: flex;
             flex-direction: column;
+            margin-bottom: 75px;
             max-width: 660px;
             padding-top: 125px;
-            padding-bottom: 114px;
 
             & h3 {
                 @include mglc-font-montserrat-bold;
@@ -62,7 +61,6 @@
             & .text {
                 @include mglc-font-montserrat-regular;
                 margin-top: 6px;
-                margin-bottom: 0;
                 padding-left: 2px;
                 font-size: 14px;
                 line-height: 30px;
@@ -74,12 +72,12 @@
                 position: relative;
                 font-size: 10px;
                 letter-spacing: 1px;
-                margin-top: 45px;
+                margin-top: 13px;
                 padding-left: 2px;
 
                 &:before {
                     position: absolute;
-                    top: -14px;
+                    top: -5px;
                     left: 0;
                     content: '';
                     height: 1px;
@@ -92,14 +90,15 @@
 
     & .mglc-about-section-item {
         max-width: $max-width-content;
-        margin: 34px auto 0;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
 
         & .point-services {
             width: 366px;
-            margin-bottom: 62px;
+            margin-top: 28px;
+            margin-bottom: 28px;
             display: flex;
             justify-content: space-between;
             transition: all 0.3s ease;

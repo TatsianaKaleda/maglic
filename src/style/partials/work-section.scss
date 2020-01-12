@@ -30,7 +30,9 @@
         &-buttons {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             margin-top: 47px;
+            padding: 0 16px;
   
             & .gallery-filter {
                 @include mglc-font-montserrat-regular;

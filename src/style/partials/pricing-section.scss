@@ -1,6 +1,5 @@
 .mglc-pricing-section {
-    padding-top: 110px;
-    padding-bottom: 89px;
+    padding: 110px 16px 89px;
 
     &-title {
         text-align: center;
@@ -33,11 +32,8 @@
         margin: 0 auto;
         
         &-heading {
-            display: flex;
-            justify-content: center;
-            padding-right: 44px;
+            text-align: center;
             letter-spacing: 2px;
-    
 
             &-part1 {
                 @include mglc-font-montserrat-semi-bold;
@@ -62,13 +58,11 @@
         }
 
         &-cards {
+            margin-top: 74px;
             padding: 0;
-            display: flex;
-            justify-content: space-between;
 
             & .card {
-                margin-top: 74px;
-                width: 25%;
+                margin-bottom: 16px;
                 transition: box-shadow .3s;
 
                 &-body {
@@ -90,20 +84,12 @@
                     list-style-type: none;
 
                     &-item:first-child {
-                        @include mglc-font-montserrat-regular;
                         margin-top: 23px;
-                        padding: 12px 18px 18px 1px;
-                        font-size: 12px;
-                        letter-spacing: 1px;
-                        text-align: center;
-                        text-transform: capitalize;
-                        color: $grey-color-2;
-                        border-bottom: none;
                     }
                     
-                    &-item:not(:first-child) {
+                    &-item {
                         @include mglc-font-montserrat-regular;
-                        padding: 12px 18px 18px 1px;
+                        padding: 15px 0;
                         font-size: 12px;
                         letter-spacing: 1px;
                         text-align: center;
@@ -111,7 +97,6 @@
                         color: $grey-color-2;
                         border-bottom: none;
     
-
                         & sup {
                             top: -28px;
                             
@@ -169,5 +154,5 @@
                 }
             }
         } 
-    }
+    }     
 }

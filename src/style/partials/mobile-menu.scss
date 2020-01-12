@@ -1,0 +1,25 @@
+.toggle-btn {
+    & .hamburger-icon {
+        background-color: $yellow-color;
+    }
+}
+
+.omni-mobile-menu,
+.omni-mobile-menu {
+
+    & .omni-dropdown-toggle,
+    a {
+        background-color: $grey-color-7;
+        border-color: $yellow-color;
+    }
+}
+
+.omni-mobile-menu {
+    & a {
+        @include mglc-font-lato-black;
+        padding: 10px 20px;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $text-color;
+    }
+}

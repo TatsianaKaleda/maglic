@@ -1,0 +1,44 @@
+@media screen and (max-width: 1200px) {
+    .mglc-blog-section {
+        & .gallery-description {
+            padding: 41px 16px 21px;
+
+            &-title {
+                &-value {
+                    font-size: 20px;
+                }
+            }
+        }
+            
+        & .gallery-description-content {
+            &-value {
+                font-size: 11px;
+                line-height: 22px;
+            }
+        }   
+    } 
+}
+
+@media screen and (max-width: 992px) {
+    .mglc-blog-section {
+        &-gallery {
+            & .description {
+                // & .gallery-description {
+
+                //     &:before {
+                //         display: none;
+                //     }
+                // }
+            }
+        }
+
+        & .gallery-description {        
+            &-content {
+                &-value {
+                    font-size: 12px;
+                    line-height: 24px;
+                }
+            }
+        }   
+    }
+}

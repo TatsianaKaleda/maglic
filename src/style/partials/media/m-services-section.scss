@@ -1,6 +1,13 @@
-@media screen and (max-width: 1000px) {
-    &-info {
-        margin: 0 auto;
+@media screen and (max-width: 1024px) {
+    .mglc-services-section {
+        &-container {
+            max-width: 100%;
+        }
+
+        &-info, &-icons {
+            margin: 0 auto;
+            max-width: 100%;
+        }
     }
 
     &-icons {
@@ -16,5 +23,31 @@
     }
 }
 
-    
+@media screen and (max-width: 768px) {
+    .mglc-services-section-icons {
+        justify-content: center;
 
+        & .icon-services {
+            flex: 0 0 100%;
+            justify-content: center;
+
+            & .far, & .fas {
+                border: none;
+                text-shadow: 1px 1px 2px $grey-color;
+                box-shadow: 0 0 2px 1px $grey-color ;
+            }
+            
+            &-name {
+                text-shadow: 1px 1px 2px $grey-color;
+                color: $text-color;
+            }
+        }
+    }
+}
+@media screen and (max-width: 660px) {
+    .mglc-services-section {
+        &-main-container {
+            background: #f8f9fd;
+        }
+    }
+}

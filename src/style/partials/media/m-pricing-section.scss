@@ -1,0 +1,49 @@
+@media screen and (max-width: 1200px) {
+    .mglc-pricing-section {
+        padding-top: 100px;
+
+        &-title {
+            margin-bottom: 50px;
+        }
+        
+        &-container-cards {
+            margin-top: 50px;
+
+            & .card {
+                & .button {
+                    & .get-plan-btn {
+                        opacity: 1;
+                    }
+                }
+
+                & .list-group {
+                    margin: 0;
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .mglc-pricing-section {
+        padding-top: 50px;
+
+        &-title {
+            margin-bottom: 25px;
+        }
+
+        &-container-cards {
+            margin-top: 25px;
+
+            & .card {
+                & .list-group-item {
+                    padding: 10px 0;
+                }
+
+                & .card-body.button {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+}

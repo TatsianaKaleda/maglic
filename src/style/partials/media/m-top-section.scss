@@ -3,6 +3,34 @@
         &-container {
             padding-left: 15px;
             padding-right: 15px;
+
+            & .carousel-item img {
+                height: 400px;
+            }
+
+            & .carousel-caption {
+                top: 30%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mglc-top-section-container {
+        & .carousel-item img {
+            height: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mglc-top-section-container {
+        & .bd-example {
+            display: none;
+        }
+
+        & .mobile-title {
+            display: block;
         }
     }
 }

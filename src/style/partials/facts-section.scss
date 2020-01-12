@@ -18,11 +18,8 @@
     &-container {
         max-width: $max-width-content;
         margin: 70px auto 55px;
-        display: flex;
-        justify-content: space-between;
 
         &-points {
-            flex: 0 0 25%;
             text-align: center;
             transition: .3s;
 
@@ -42,10 +39,10 @@
                 &:before {
                     position: absolute;
                     top: 43px;
-                    left: 111px;
+                    left: calc(50% - 27px);
                     content: '';
                     height: 3px;
-                    width: 55px;
+                    width: 54px;
                     background:#d0d0d0;
                 }
             }

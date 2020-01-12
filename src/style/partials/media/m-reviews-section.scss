@@ -1,0 +1,46 @@
+@media screen and (max-width: 1024px) {
+    .mglc-reviews-section-footer-container-title {
+      font-size: 20px;
+    }
+}
+  
+  @media screen and (max-width: 768px) {
+    .mglc-reviews-section {
+        &-container-authors-item {
+            & .review-avatar {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .mglc-reviews-section {
+        &-container {
+            &-authors-item {
+                & .review-avatar {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+  
+            & .carousel-caption p {
+                font-size: 12px;
+            }
+        }
+  
+        &-footer-container {
+            flex-wrap: wrap;
+            text-align: center;
+  
+            &-title, &-button {
+                flex: 0 0 100%;
+            }
+  
+            &-title {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

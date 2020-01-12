@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+    .mglc-header {
+        padding-top: 20px;
+
+        & .navbar {
+            display: none;
+        }
+    }
+}

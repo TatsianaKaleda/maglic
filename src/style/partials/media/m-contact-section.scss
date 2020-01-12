@@ -1,0 +1,57 @@
+@media screen and (max-width: 1200px) {
+    .mglc-contact-section-container-icons {
+        & .icon {
+            flex-flow: column;
+
+            &-detail {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            &-container {
+                width: auto;
+                flex: initial;
+                border: none;
+            }
+        } 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .mglc-contact-section-title {
+        padding-top: 0;
+        padding-bottom: 50px    ;
+    }
+}
+  
+@media screen and (max-width: 768px) {
+    .mglc-contact-section {
+        &-title {
+            padding-bottom: 25px;
+        }
+
+        &-container {
+            padding-top: 50px;
+
+            &-form {
+                & .form-item {
+                    &:first-child {
+                        margin-left: 15px;
+                    }
+
+                    &:last-child {
+                        margin-right: 15px;
+                    }
+                }
+
+                & .form-content-container {
+                    margin: 0 15px 25px;
+                }
+
+                & .contact-form-submit {
+                    text-align: center;
+                }
+            }
+        }   
+    } 
+}

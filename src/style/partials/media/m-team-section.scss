@@ -1,0 +1,63 @@
+@media screen and (max-width: 1024px) {
+    .mglc-team-section  {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .mglc-team-section {
+        &-title {
+            margin-bottom: 40px;
+        }
+
+        & .mglc-team-section-membres {
+            & .employee {
+                width: 55%;
+                margin: 0 auto;
+    
+                &-information {
+                    & .profession {
+                        font-size: 10px;
+                    }
+                }
+            } 
+        }
+
+        & .mglc-team-section-container-about {
+            margin-top: 35px;
+
+            & .text-description {
+                margin-top: 24px;
+            }
+        }
+
+        & .mglc-team-section-container-button {
+            margin-top: 10px;
+
+            & button {
+                padding: 10px 0;
+                width: 100%;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 550px) {
+    .mglc-team-section {
+        padding-top: 50px;
+
+        & .mglc-team-section-membres {
+            & .employee {
+                width: 85%;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 400px) {
+    .mglc-team-section .mglc-team-section-membres {
+        & .employee {
+            width: 100%;
+        }
+    }
+}

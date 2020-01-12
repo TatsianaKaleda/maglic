@@ -3,33 +3,37 @@
 
 <head lang="ru">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Maglic</title>
 </head>
 
-<body>
+<body class="open-right">
     <div id="preloader">
         <div id="status">&nbsp;</div>
     </div>
 
-    <div data-target="#main-navigation" data-offset="0">
-        //= template/sections/top-section.html
-        <div class="mglc-services-section-main-container">
-            //= template/sections/services-section.html
-            //= template/sections/work-section.html
+    <div class="content-wrapper">
+        <div data-target="#main-navigation" data-offset="0">
+            //= template/sections/top-section.html
+            <div class="mglc-services-section-main-container">
+                //= template/sections/services-section.html
+                //= template/sections/work-section.html
+            </div>
+            //= template/sections/about-section.html
+            //= template/sections/facts-section.html
+            //= template/sections/team-section.html
+            //= template/sections/reviews-section.html
+            //= template/sections/blog-section.html
+            //= template/sections/pricing-section.html
+            //= template/sections/contact-section.html
         </div>
-        //= template/sections/about-section.html
-        //= template/sections/facts-section.html
-        //= template/sections/team-section.html
-        //= template/sections/reviews-section.html
-        //= template/sections/blog-section.html
-        //= template/sections/pricing-section.html
-        //= template/sections/contact-section.html
+
+        //= template/footer.html
     </div>
 
-    //= template/footer.html
-
+    //= template/mobile-menu.html
     <script type="text/javascript" src="./js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
 </body>

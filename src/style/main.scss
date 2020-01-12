@@ -8,10 +8,24 @@
 */
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+
+/*
+* Lightbox gallery
+*/
+@import "../../node_modules/lightbox2/dist/css/lightbox.min.css";
+
 /*
 * Fonts
 */
 @import "./partials/fonts";
+
+/*
+* Web fonts
+*/
+@import "../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-brands";
+@import "../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-regular";
+@import "../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-solid";
 
 /*
 * Vars
@@ -33,6 +47,22 @@
 */
 @import "./partials/preloader";
 
+/*
+* Mobile menu
+*/
+@import "../../node_modules/mobile-menu/scss/mobile-menu";
+@import "../../node_modules/mobile-menu/scss/variables";
+@import "partials/mobile-menu";
+
+/*
+* Header
+*/
+@import "./partials/header";
+
+/*
+* m-Header
+*/
+@import "./partials/media/m-header";
 
 /*
 * Top-section
@@ -43,14 +73,6 @@
 * m-top-section
 */
 @import "./partials/media/m-top-section";
-
-/*
-* Web fonts
-*/
-@import "../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fontawesome";
-@import "../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-brands";
-@import "../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-regular";
-@import "../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-solid";
 
 /*
 * Services-section
@@ -68,9 +90,9 @@
 @import "./partials/work-section";
 
 /*
-* Lightbox gallery
+* m-work-section
 */
-@import "../../node_modules/lightbox2/dist/css/lightbox.min.css";
+@import "./partials/media/m-work-section";
 
 /*
 * About-section
@@ -78,9 +100,19 @@
 @import "./partials/about-section";
 
 /*
+* m-about-section
+*/
+@import "./partials/media/m-about-section";
+
+/*
 * Facts-section
 */
 @import "./partials/facts-section";
+
+/*
+* m-facts-section
+*/
+@import "./partials/media/m-facts-section.scss";
 
 /*
 * Team-section
@@ -88,9 +120,19 @@
 @import "./partials/team-section";
 
 /*
+* m-team-section
+*/
+@import "./partials/media/m-team-section";
+
+/*
 * Reviews-section
 */
 @import "./partials/reviews-section";
+
+/*
+* m-reviews-section
+*/
+@import "./partials/media/m-reviews-section";
 
 /*
 * Blog-section
@@ -98,9 +140,19 @@
 @import "./partials/blog-section";
 
 /*
+* m-blog-section
+*/
+@import "./partials/media/m-blog-section";
+
+/*
 * Pricing-section
 */
 @import "./partials/pricing-section";
+
+/*
+* m-pricing-section
+*/
+@import "./partials/media/m-pricing-section";
 
 /*
 * Contact-section
@@ -108,11 +160,26 @@
 @import "./partials/contact-section";
 
 /*
+* m-contact-section
+*/
+@import "./partials/media/m-contact-section";
+
+/*
 * Footer-section
 */
 @import "partials/footer";
 
 /*
+* m-footer-section
+*/
+@import "partials/media/m-footer";
+
+/*
 * Services-page
 */
 @import "partials/services-page";
+
+/*
+* m-services-page
+*/
+@import "partials/media/m-services-page";

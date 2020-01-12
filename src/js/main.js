@@ -23,3 +23,8 @@
  * Counterup
  */
 //= ../../node_modules/jquery.counterup/jquery.counterup.min.js
+
+/*
+ * Mobile menu
+ */
+//= ../../node_modules/mobile-menu/js/mobile-menu.js

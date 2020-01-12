@@ -1,0 +1,24 @@
+@media screen and (max-width: 1024px) {
+    .mglc-about-section {
+        background: rgba(255,255,255,.8);
+  
+        &-bg {
+            right: 16px;
+        }
+    }
+}
+  
+@media screen and (max-width: 575px) {
+    .mglc-about-section {
+        &-container-text {
+            margin-bottom: 30px;
+            padding-top: 110px;
+        }
+  
+        & .mglc-about-section-item {
+            & .point-services {
+                margin: 16px auto;
+            }
+        }
+    }
+}

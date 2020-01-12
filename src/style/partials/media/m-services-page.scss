@@ -1,0 +1,105 @@
+@media screen and (max-width: 546px) {
+    .mglc-services-page {
+
+        &-container {
+            &-list {
+                grid-template-columns: repeat(3, 1fr)/repeat(2, 1fr);
+
+                &-design {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                }
+    
+                &-photo {
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                }
+    
+                &-art {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                }
+    
+                &-graphics {
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                }
+    
+                &-animation {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 3;
+                    grid-row-end: 4;
+                }
+    
+                &-3D {
+                    grid-column-start: 2;
+                    grid-column-end: 3;
+                    grid-row-start: 3;
+                    grid-row-end: 4;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .mglc-services-page {
+
+        &-container {
+            &-list {
+                grid-template-columns: repeat(6 1fr)/repeat(1, 1fr);
+
+                &-design {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 1;
+                    grid-row-end: 2;
+                }
+    
+                &-photo {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 2;
+                    grid-row-end: 3;
+                }
+    
+                &-art {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 3;
+                    grid-row-end: 4;
+                }
+    
+                &-graphics {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 4;
+                    grid-row-end: 5;
+                }
+    
+                &-animation {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 5;
+                    grid-row-end: 6;
+                }
+    
+                &-3D {
+                    grid-column-start: 1;
+                    grid-column-end: 2;
+                    grid-row-start: 6;
+                    grid-row-end: 7;
+                }
+            }
+        }
+    }
+}

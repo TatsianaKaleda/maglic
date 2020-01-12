@@ -21,6 +21,7 @@
     "imagemin-pngquant": "^8.0.0",
     "jquery.counterup": "^2.1.0",
     "lightbox2": "^2.11.1",
+    "mobile-menu": "^3.0.3",
     "rimraf": "^3.0.0",
     "slick-carousel": "^1.8.1"
   },
